@@ -49,9 +49,11 @@ nav a.ativo {
 }
 
 .hero img {
-  width: 100%;
-  height: auto;
-  display: block;
+   background-image: url(
+unnamed (2).jpg);
+    background-blend-mode: multiply; 
+    background-size: cover;
+    height: 110vh;
 }
 
 .texto-hero {
