@@ -1,101 +1,272 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f1f1f1;
+    background: #fff;
+    font-family: "Questrial", sans-serif;
+    overflow-x:hidden;
+    min-height: 500vh;
+    font-family: "Poppins", sans-serif;
 }
 
-/* Navbar */
-.navbar {
-  background-color: #333;
+#pag1 {
+    background: url('unnamed\ \(2\).jpg');
+    background-blend-mode: multiply; 
+    background-size: cover;
+    height: 110vh;
+}
+
+#pag2 {
+  background-color: #09003F;
+  background-blend-mode: multiply; 
+  background-size: cover;
+  height: 90vh;
+}
+
+#pag3 {
+  background-color: #09003F;
+  background-blend-mode: multiply; 
+  background-size: cover;
+  height: 120vh;
+}
+
+#pag4 {
+  background-color: #09003F;
+  background-blend-mode: multiply; 
+  background-size: cover;
+  height: 160vh;
+}
+
+#pag5 {
+  background-color: #AAAAAA;
+  background-blend-mode: multiply; 
+  background-size: cover;
+  height: 40vh;
+}
+
+.rodape{
+  margin-top: 20px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 30px;
-  color: white;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-content: center;
+  top: 20vh;
 }
-
-.navbar .logo img {
-  width: 40px;
+.rodimg{
+position: absolute;
+right: 75%;
 }
-
-.navbar .menu {
-  list-style: none;
+.promocao{
+  margin-top: 20px;
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-content: center;
+  top: 7vh;
 }
-
-.navbar .menu li a {
+.promocao h1{
   color: white;
-  text-decoration: none;
-  font-weight: bold;
+  font-size: 40px;
+}
+.camisaspromocao{
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-content: center;
+  top: 7vh;
 }
 
-.navbar .menu li a:hover {
-  text-decoration: underline;
+.produtos{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-content: center;
+    top: 7vh;
+  }
+
+.produtos h1{
+  color: white;
+  font-size: 40px;
 }
 
-/* Hero image */
-.hero {
-  position: relative;
-  width: 100%;
-  height: 300px;
-  overflow: hidden;
+
+.fotos{
+  margin-top: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-content: center;
+}
+.f1{
+  height: 600px;
+}
+.f2{
+  height: 600px;
+}
+.imgsobrenos{
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-content: center;
 }
 
-.hero img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.hero .overlay-text {
+.sobrenos{
+  width: 50%;
+  left: 50%;
   position: absolute;
-  top: 50%;
+  top: 120vh;
+}
+
+.sobrenos h1{
+  font-size: 40px;
+font-weight: bold;
+color: white;
+margin-bottom: 20px;}
+
+.sobrenos p{
+  font-size: 18px;
+  color: white;
+  max-width: 500px;
+}
+
+.img1{
+  height: 600px;
+  right: 65%;
+  top: 120vh;
+  position: absolute;
+}
+
+.menu{
+  background: #AAAAAA;
+    height: 99px;
+    vertical-align: middle;
+}
+
+.logo{
+  width: 20%;
+   height: auto;
+  margin-left: 18%;
+  margin-top: 4vh;
+  vertical-align: middle;
+  margin-bottom: 4vh;
+  bottom: 4vh;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 45%);
+    padding: 15px 50px;
+}
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav li {
+    height: 50px;
+}
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #000;
+    transition: all 0.3s ease;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+nav a.active { 
+    color: #002BFF; 
+} 
+nav a:hover {
+    color: #002BFF;
+}
+nav svg {
+  cursor: pointer;
+    margin-right: 100px;
+    fill: #000;
+}
+
+.centro {
+  position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-  background-color: rgba(0,0,0,0.6);
-  padding: 20px 40px;
-  font-size: 32px;
+  width: 590px;
+  height: 160px;
+  background: #000;
+  padding: 45px 60px;
+  top: 55vh;
+}
+.centro h1 {
+  text-align: center;
+  font-weight: 200;
+  color: #fff;
+  font-size: 40px;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+
+.camisa {
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  width: 200px;
+  align-items: center;
+}
+
+.camisa img {
+  width: 120%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.camisa button {
+  margin-top: 10px;
+  padding: 15px 15px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
   font-weight: bold;
 }
 
-/* Sobre nós */
-.sobre {
-  background-color: #1b1642;
-  color: white;
-  padding: 40px 20px;
+.camisa button:hover {
+  background-color: #3234b0;
 }
 
-.sobre .container {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  max-width: 1000px;
-  margin: auto;
-  align-items: flex-start;
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.sobre .container img {
-  width: 300px;
-  border-radius: 8px;
-}
-
-.sobre .texto {
-  flex: 1;
-}
-
-.sobre h2 {
-  font-size: 28px;
-  margin-bottom: 15px;
-}
-
-.sobre p {
-  margin-bottom: 10px;
-  line-height: 1.6;
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
 }
